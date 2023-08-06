@@ -1,7 +1,12 @@
 <h1>Lista de Productos</h1>
-<ul>
-  <li *ngFor="let producto of productos">
+<ul *ngFor="let producto of productos">
+  <li>
     <h2>{{producto.nombre}}</h2>
+  </li>
+  <li>
     <h2>{{producto.precio}}</h2>
+  </li>
+  <li>
+    <img src="{{producto.imagen}}" alt="{{producto.nombre}}">
   </li>
 </ul>

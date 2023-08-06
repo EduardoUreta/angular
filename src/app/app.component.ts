@@ -10,7 +10,7 @@ import { of } from 'rxjs';
   providers: [ApiService]
 })
 export class AppComponent {
-  productos = [{ nombre: '' },{precio: ''}];
+  productos = [{ nombre: '' },{precio: ''},{imagen: ''}];
 
   constructor(private api: ApiService) {
     this.getProductos();
